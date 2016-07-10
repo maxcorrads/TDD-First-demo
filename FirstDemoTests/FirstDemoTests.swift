@@ -10,27 +10,46 @@ import XCTest
 @testable import FirstDemo
 
 class FirstDemoTests: XCTestCase {
+  
+  var viewController: ViewController!
+
+  override func setUp() {
+    super.setUp()
+    viewController = ViewController()
+  }
+  
+  override func tearDown() {
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    super.tearDown()
+  }
+  
+  func test_NumberOfVowels_WhenPassedDominik_ReturnsThree() {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    let string = "Dominik"
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+    let numberOfVowels = viewController.numberOfVowels(in: string)
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    XCTAssertEqual(numberOfVowels, 3,
+                   "should find 3 vowels in Dominik",
+                   file: "FirstDemoTests.swift", line: 24)
+  }
+  
+  func test_MakeHeadline_ReturnsStringWithEachWordStartCapital() {
+    let input           = "this is A test headline"
+    let expectedOutput  = "This Is A Test Headline"
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    let headline = viewController.makeHeadline(from: input)
     
+    XCTAssertEqual(headline, expectedOutput)
+  }
+  
+  func test_MakeHeadline_ReturnsStringWithEachWordStartCapital2() {
+    let input           = "Here is another Example"
+    let expectedOutput  = "Here Is Another Example"
+    
+    let headline = viewController.makeHeadline(from: input)
+    
+    XCTAssertEqual(headline, expectedOutput)
+  }
+  
 }
