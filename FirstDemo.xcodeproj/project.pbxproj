@@ -146,7 +146,6 @@
 				TargetAttributes = {
 					F298A80D1D26958300903D45 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = Q6PD97MRX4;
 						DevelopmentTeamName = "Dominik Hauser";
 						ProvisioningStyle = Automatic;
 					};
@@ -337,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FirstDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftandpainless.FirstDemo;
@@ -349,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FirstDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftandpainless.FirstDemo;
@@ -402,6 +403,7 @@
 				F298A82D1D26958300903D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F298A82E1D26958300903D45 /* Build configuration list for PBXNativeTarget "FirstDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +412,7 @@
 				F298A8301D26958300903D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
