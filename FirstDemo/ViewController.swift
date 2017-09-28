@@ -34,9 +34,8 @@ class ViewController: UIViewController {
             let first = mutableWord.remove(at: mutableWord.startIndex)
             return String(first).uppercased() + mutableWord
         }
-        
+
         return headlineWords.joined(separator: " ")
-        
     }
 }
 

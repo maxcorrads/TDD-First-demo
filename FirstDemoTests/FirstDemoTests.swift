@@ -20,14 +20,14 @@ class FirstDemoTests: XCTestCase {
     super.tearDown()
   }
   
-  func test_NumberOfVowels_WhenPassedDominik_ReturnsThree() {
+  func test_NumberOfVowels() {
     
-    let string = "Dominik"
+    let string = "Matteo"
     
     let numberOfVowels = viewController.numberOfVowels(in: string)
     
     XCTAssertEqual(numberOfVowels, 3,
-                   "should find 3 vowels in Dominik",
+                   "should find 3 vowels in Matteo",
                    file: "FirstDemoTests.swift", line: 24)
   }
   
